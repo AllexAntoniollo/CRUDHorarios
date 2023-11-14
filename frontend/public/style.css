@@ -1,0 +1,213 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+*{
+  scroll-behavior: smooth;
+}
+body{
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+.alinhar{
+  margin: 0 auto !important;
+  margin-top: 15px !important;
+}
+body header.header{
+  width: 100%;
+  background-color: #00693e;
+  padding: 20px;
+}
+.container{
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  border: 2px solid #ccc;
+  margin-top: 80px;
+  margin: 0 auto;
+
+}
+.listaCursos{
+  text-align: center;
+  background-color: lightgrey;
+  padding: 15px 0;
+}
+.listaCursos a{
+  text-decoration: none;
+  display: block;
+  color: black;
+  margin-top: 10px;
+  font-size: 22px;
+  font-weight: bold;
+}
+.dia{
+  padding: 10px;
+  background-color: #ccc;
+  margin: 0 10px;
+  width: 200px;
+}
+
+.curso{
+  background-color: #008f45;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 10px;
+  color: white;
+  
+}
+.curso p{
+  font-size: 22px;
+}
+
+.bloco{
+  width: 200px;
+  background-color: #777;
+  padding: 0 10px;
+  margin: 0 10px;
+
+}
+.horarios{
+  background-color: red;
+  height: 200px;
+  width: 200px;
+}
+.especifico{
+  background-color: #00693e;
+  color: white;
+}
+.w20{
+  width: 20%;
+}
+.w80{
+  width: 80;
+}
+.clear{
+  clear: both;
+}
+.left{
+  float: left;
+}
+.top{
+  margin-top: 10px;
+}
+
+nav{
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 17px;
+}
+
+nav a{
+  color: black;
+  text-decoration: none;
+}
+.active {
+  color: #00693e !important;
+
+}
+/* mouse over */
+nav a:hover  {
+   color: #00693e !important;
+}
+
+.horarios-mobile{
+  display: none;
+  position: relative;
+  right: 10px;
+}
+.ajeitar{
+  text-align: left;
+  position: absolute;
+  color: #ccc;
+}
+.horarios-mobile .dia, .horarios-mobile .bloco{
+  width: 100%;
+}
+form p{
+  margin-top: 15px;
+}
+form input{
+  text-align: center;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 300px;
+  outline: none;
+  padding: 3px;
+
+}
+
+form input:focus{
+  border-color: #777;
+}
+
+form .submit{
+  margin-top: 20px;
+  background-color: #008f45;
+  padding: 5px;
+  border: none;
+  color: white;
+}
+form .submit:hover{
+  background-color: #00693e;
+  transition: 0.2s;
+
+}
+.pad{
+  padding: 6px;
+}
+.mob p {
+  padding: 0;
+  margin: 0;
+}
+.message{
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: #ccc;
+  width: 200px;
+  padding: 6px;
+  border-radius: 6px;
+}
+
+form select{
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 300px;
+  padding: 3px;
+  outline: none;
+  text-align: center;
+}
+
+@media screen and (max-width: 992px) {
+  header.tabela .dias {
+    display: none;
+  }
+  .table .corpo {
+    display: none;
+  }
+  .horarios-mobile{
+
+    display: block;
+  }
+
+}
+@media screen and (max-width: 720px) {
+  form.d-flex{
+    margin: 7px auto;
+  }
+
+}
+@media screen and (max-width: 490px) {
+ .navbar .container-fluid{
+    justify-content: center;
+  }
+}
